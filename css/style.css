@@ -1,0 +1,188 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 81.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+.margin-bottom-large {
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-large {
+      margin-bottom: 3rem; } }
+
+.margin-bottom-medium {
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-medium {
+      margin-bottom: 1.8rem; } }
+
+.margin-bottom-small {
+  margin-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-small {
+      margin-bottom: 1rem; } }
+
+.margin-bottom-xs {
+  margin-bottom: 1rem; }
+
+a {
+  text-decoration: none;
+  color: #aaa; }
+  a:hover {
+    color: #fff; }
+
+.title-big {
+  font-size: 5rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-big {
+      font-size: 3.5rem; } }
+
+.title-medium {
+  font-size: 4rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-medium {
+      font-size: 3rem; } }
+
+.title-small {
+  font-size: 3rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-small {
+      font-size: 2.5rem; } }
+
+.title-xs {
+  font-size: 2rem;
+  font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    .title-xs {
+      font-size: 2rem; } }
+
+.text-center {
+  text-align: center; }
+
+.center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.background-grey {
+  background-color: #f9f7f6; }
+
+.empty {
+  opacity: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .empty {
+      display: none; } }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.mobile-display {
+  display: none !important; }
+  @media only screen and (max-width: 56.25em) {
+    .mobile-display {
+      display: inline-block !important; } }
+
+.desktop-display {
+  display: inline-block !important; }
+  @media only screen and (max-width: 56.25em) {
+    .desktop-display {
+      display: none !important; } }
+
+.row {
+  max-width: 100%;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 0rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 0rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 0rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2);
+    display: inline-block; }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 2rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 2rem) / 3) + 2rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem) / 4);
+    display: inline-block; }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 2rem) / 4) + 2rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 2rem) / 4) + 2 * 2rem); }
+
+.grid-row-3 {
+  width: 80%;
+  text-align: center;
+  margin: 3rem auto; }
+  @media only screen and (max-width: 56.25em) {
+    .grid-row-3 {
+      width: 95%; } }
+  .grid-row-3 .grid-col-1-3 {
+    width: calc((100% - 2 * 2rem) / 3);
+    display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .grid-row-3 .grid-col-1-3 {
+        min-width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .grid-row-3 .grid-col-1-3 {
+        min-width: 100%; } }
+  .grid-row-3 .grid-col-2-3 {
+    width: calc((100% - 2 * 2rem) * 2 / 3);
+    display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .grid-row-3 .grid-col-2-3 {
+        min-width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .grid-row-3 .grid-col-2-3 {
+        min-width: 100%; } }
+
+main {
+  height: 98vh;
+  width: 100%;
+  background-image: url("../img/background-pool-water.jpg"); }
+  main p {
+    transition: 0.5s; }
+    main p:hover {
+      color: #fff; }
+
+.bkg-cover {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%; }

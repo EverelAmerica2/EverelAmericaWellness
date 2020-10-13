@@ -1,1 +1,1 @@
-# EverelAmericaWellness
+# everelamericawellness

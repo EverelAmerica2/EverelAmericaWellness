@@ -1,0 +1,161 @@
+//color variables
+$color-primary: #101d2c;
+$color-primary-light:#244569;
+
+$color-secondary:#f9f7f6;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-3: #dfdede;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: rgb(83, 83, 83);
+$color-grey-dark-2: rgb(19, 19, 19);
+
+$color-black:#000;
+$color-white:#fff;
+
+//grid variables
+$grid-width: 100%; //114rem;
+$gutter-vertical: 0rem;
+$gutter-vertical-small: 0rem;
+$gutter-horizontal: 2rem;
+
+
+
+//initial setup
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include respond(tab-land) { 
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { 
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.margin-bottom-large{
+    margin-bottom: 4rem;
+
+    @include respond(phone){
+        margin-bottom: 3rem;
+    }
+}
+
+.margin-bottom-medium{
+    margin-bottom: 3rem;
+    @include respond(phone){
+        margin-bottom: 1.8rem;
+    }
+}
+
+.margin-bottom-small{
+    margin-bottom: 2rem;
+
+    @include respond(phone){
+        margin-bottom: 1rem;
+    }
+}
+
+.margin-bottom-xs{
+    margin-bottom: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color:$color-grey-light-2;
+
+    &:hover{
+        color:$color-white;
+    }
+}
+
+
+.title-big{
+    font-size: 5rem;
+    font-weight: 700;
+    
+    @include respond(phone){
+        font-size: 3.5rem;
+    }
+}
+
+.title-medium{
+    font-size: 4rem;
+    font-weight: 700;
+
+    @include respond(phone){
+        font-size: 3rem;
+    }
+}
+
+.title-small{
+    font-size: 3rem;
+    font-weight: 700;
+
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}
+
+.title-xs{
+    font-size: 2rem;
+    font-weight: 700;
+
+    @include respond(phone){
+        font-size: 2rem;
+    }
+}
+.text-center{
+    text-align: center;
+}
+
+.center-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.background-grey{
+    background-color: $color-grey-light-1;
+}
+.empty{
+    opacity: 0;
+    @include respond(phone){
+        display: none;
+    }
+}
+
+.float-right{float: right;}
+.float-left{float:left;}
+
+.mobile-display{
+    display:  none !important;
+    @include respond(tab-port){
+        display: inline-block !important;
+    }
+}
+
+.desktop-display{
+    display: inline-block !important;
+    @include respond(tab-port){
+        display: none !important;
+    }
+}

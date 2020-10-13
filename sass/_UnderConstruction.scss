@@ -1,0 +1,17 @@
+main{
+    height: 98vh;
+    width: 100%;
+    background-image: url("../img/background-pool-water.jpg");
+    p{
+        transition: 0.5s;
+        &:hover{
+            color:$color-white;
+        }
+    }
+}
+
+.bkg-cover{
+    background-color:rgba(0,0,0,.4);
+    height: 100%;
+    width:100%;
+}
