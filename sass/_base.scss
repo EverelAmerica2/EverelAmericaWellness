@@ -50,6 +50,14 @@ body {
     box-sizing: border-box;
 }
 
+.margin-bottom-xl{
+    margin-bottom: 6rem;
+
+    @include respond(phone){
+        margin-bottom: 4rem;
+    }
+}
+
 .margin-bottom-large{
     margin-bottom: 4rem;
 

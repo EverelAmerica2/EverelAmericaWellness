@@ -28,13 +28,7 @@
         </div>
 
         <div class="header-top"></div>
-        <nav class="header-nav" id='header-nav1'>
-            <a href="index.html" class="header-nav-item">Home</a>
-            <a href="about.html" class="header-nav-item">About the Company</a>
-            <a href="products.html" class="header-nav-item">Products</a>
-            <a href="distribution.html" class="header-nav-item">Sales Network</a>
-            <a href="contact.html" class="header-nav-item">Contact Us</a>
-        </nav>
+        <nav class="header-nav" id='header-nav1'></nav>
 
         <div class="navigation navigation-phone" id='nevigation-toggle-section'>
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -45,15 +39,7 @@
 
             <div class="navigation__background">&nbsp;</div>
 
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="index.html" class="navigation__link" ><span>01</span>Home</a></li>
-                    <li class="navigation__item"><a href="about.html" class="navigation__link" ><span>02</span>About Us</a></li>
-                    <li class="navigation__item"><a href="products.html" class="navigation__link" ><span>03</span>Products</a></li>
-                    <li class="navigation__item"><a href="distribution.html" class="navigation__link" ><span>04</span>Sales Network</a></li>
-                    <li class="navigation__item"><a href="contact.html" class="navigation__link" ><span>05</span>Contact Us</a></li>
-                    </ul>
-            </nav>
+            <nav class="navigation__nav"></nav>
         </div>
 
         <div class="header-content">
@@ -66,7 +52,7 @@
 
     <main class="main" id="main">
         <section class="section-brands"></section>
-        <section class="section-intro">
+        <section class="section-intro" id="intro">
             <div class="intro-content">
                 <div class="intro-content-title title-small margin-bottom-medium">Welcome to Everel America Pool and Wellness</div>
                 <div class="intro-content-text">
@@ -81,29 +67,69 @@
                 <div class="intro-content-img"></div>
             </div>
         </section>
-        <section class="section-services"> <p style="text-align:center; font-size: 3rem; font-weight: 600;">list the services we have in this section</p></section>
+
+        <section class="section-services" id="service"> <p style="text-align:center; font-size: 3rem; font-weight: 600;">list the services we have in this section</p></section>
         <section class="section-procedure">
             <div class="procedure-content">
-                <div class="procedure-content-title title-small text-center">Our Work Procedure</div>
-                <div class="procedure-content-text text-center margin-bottom-medium">It's easy to build your custom pool with us...</div>
-                <div class="procedure-content-1">
-                    <div class="procedure-content-subtitle title-xs">Consult</div>
-                    <div class="procedure-content-text"></div>
+                <div class="procedure-content-title title-small text-center margin-bottom-xs">Our Work Procedure</div>
+                <div class="procedure-content-text text-center margin-bottom-xl">It's easy to build your custom pool with us...</div>
+                <div class="procedure-content-box-1 ">
+                    <div class="procedure-content-bkg-text">01</div>
+                    <div class="procedure-content-subtitle title-xs margin-bottom-small">Consult</div>
+                    <div class="procedure-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit error mollitia ipsum eius nemo totam debitis, iusto, quas omnis voluptates enim sint explicabo laborum cupiditate optio nam et! Odio?</div>
                 </div>
-                <div class="procedure-content-2">
-                    <div class="procedure-content-subtitle"></div>
-                    <div class="procedure-content-text"></div>
+                <div class="procedure-content-box-2">
+                    <div class="procedure-content-bkg-text">02</div>
+                    <div class="procedure-content-subtitle title-xs margin-bottom-small">Construction</div>
+                    <div class="procedure-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laboriosam consequatur eaque ea harum laudantium provident dolore unde explicabo, facilis error qui, libero perspiciatis, quam saepe tempora est ut culpa!</div>
                 </div>
-                <div class="procedure-content-3">
-                    <div class="procedure-content-subtitle"></div>
-                    <div class="procedure-content-text"></div>
+                <div class="procedure-content-box-3">
+                    <div class="procedure-content-bkg-text">03</div>
+                    <div class="procedure-content-subtitle title-xs margin-bottom-small">Handover</div>
+                    <div class="procedure-content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dicta natus eaque laudantium nesciunt voluptatem, culpa ipsa illo illum sapiente porro ullam excepturi aut accusamus, autem soluta ipsum! Maxime, molestiae.</div>
                 </div>
             </div>
         </section>
+
         <!-- <section class="section-feedback"></section> -->
-        <section class="section-latest"></section>
+        <section class="section-latest" id="news">
+            <div class="latest-content">
+                <div class="latest-content-title title-small text-center margin-bottom-xs">Latest News</div>
+                <div class="latest-content-text text-center margin-bottom-xl">Check out our social medial to see what we are up to</div>
+                <div class="latest-content-box-1">
+                    
+                </div>
+                <div class="latest-content-box-2">
+                    
+                </div>
+                <div class="latest-content-box-3">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact" id="contact">
+            <div class="contact-form">
+                <h2 class="contact-form-title title-medium text-center margin-bottom-medium">Contact Us</h2>
+                <div class="contact-form-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel corrupti dignissimos quod, perferendis autem eligendi ratione, voluptas porro quae dolorem corporis ullam itaque doloribus praesentium accusantium eius? Vero, eum pariatur.</div>
+                <form class='contact-form-content text-center' method="POST"
+                    action="/////https://formspree.io/email_insert_here">
+                    <input class='contact-form-name margin-bottom-xs' type="text" name="name" placeholder="Your name">
+                    <input class='contact-form-company margin-bottom-xs' type="text" name="comapny"
+                        placeholder="Your company website">
+                    <input class='contact-form-number margin-bottom-xs' type="text" name="phone number"
+                        placeholder="Your phone number">
+                    <input class='contact-form-email margin-bottom-xs' type="email" name="email"
+                        placeholder="Your email">
+                    <textarea class='contact-form-msg margin-bottom-xs' name="message"
+                        placeholder="Message..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
     </main>
-    <footer class="section-footer">
+    <footer class="section-footer footer">
 
     </footer>
     <script src='./js/index.js'></script>

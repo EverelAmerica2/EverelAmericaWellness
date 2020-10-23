@@ -12,7 +12,7 @@ const printFooter = function(){
     $('.footer').append(`
     <div class='footer-box1'>
             <div class='footer-center-box'>
-                <p class='footer-title'>Everel America</p>
+                <p class='footer-title'>Everel America Pool and Wellness Products</p>
                 <p class='footer-content'>5095 Bristol Industrial Way</p>
                 <p class='footer-content'>Buford, Georgia, 30518</p>
                 <p class='footer-title'>contact Us</p>
@@ -39,7 +39,7 @@ const printFooter = function(){
         <div class="footer-box3">
             <div class='footer-logo'><img src='${prefix}./img/logo-new.png' alt='everel america logo' /></div>
         </div>
-        <div class='footer-box4'>Everel America &copy; ${year}<br/>
+        <div class='footer-box4'>Everel America Pool and Wellness Products &copy; ${year}<br/>
             <img height="35px" alt="Visa credit card" src='${prefix}./img/Visa-256.PNG'/>
             <img height="35px" alt="American Express credit card" src='${prefix}./img/American-Express-256.PNG'/>
             <img height="35px" alt="master card credit card" src='${prefix}./img/Master-Card-256.png'/>
@@ -60,22 +60,20 @@ const printNavigation = function(){
     $('.header-nav').empty();
     $('.header-nav').append(`
         <a href="${prefix}index.html" class="header-nav-item">Home</a>
-        <a href="${prefix}about.html" class="header-nav-item">About the Company</a>
-        <a href="${prefix}news.html" class="header-nav-item">News</a>
-        <a href="${prefix}products.html" class="header-nav-item">Products</a>
-        <a href="${prefix}distribution.html" class="header-nav-item">Sales Network</a>
-        <a href="${prefix}contact.html" class="header-nav-item">Contact Us</a>
+        <a href="${prefix}#intro" class="header-nav-item">About the Company</a>
+        <a href="${prefix}#news" class="header-nav-item">News</a>
+        <a href="${prefix}#service" class="header-nav-item">Services</a>
+        <a href="${prefix}#contact" class="header-nav-item">Contact Us</a>
     `);
 
     $('.navigation__nav').empty();
     $('.navigation__nav').append(`
     <ul class="navigation__list">
         <li class="navigation__item"><a href="${prefix}index.html" class="navigation__link" ><span>01</span>Home</a></li>
-        <li class="navigation__item"><a href="${prefix}about.html" class="navigation__link" ><span>02</span>About Us</a></li>
-        <li class="navigation__item"><a href="${prefix}news.html" class="navigation__link" ><span>03</span>News</a></li>
-        <li class="navigation__item"><a href="${prefix}products.html" class="navigation__link" ><span>04</span>Products</a></li>
-        <li class="navigation__item"><a href="${prefix}distribution.html" class="navigation__link" ><span>05</span>Sales Network</a></li>
-        <li class="navigation__item"><a href="${prefix}contact.html" class="navigation__link" ><span>06</span>Contact Us</a></li>
+        <li class="navigation__item"><a href="${prefix}#intro" class="navigation__link" ><span>02</span>About Us</a></li>
+        <li class="navigation__item"><a href="${prefix}#news" class="navigation__link" ><span>03</span>News</a></li>
+        <li class="navigation__item"><a href="${prefix}#service" class="navigation__link" ><span>04</span>Services</a></li>
+        <li class="navigation__item"><a href="${prefix}#contact" class="navigation__link" ><span>06</span>Contact Us</a></li>
     </ul>
     `);
 }

@@ -1,0 +1,111 @@
+.section-footer{
+    width: 100%;
+    height: 40vh;
+}
+
+.footer{
+    width: 100%;
+    padding: 2rem;
+    height: 40vh;
+    background-color: $color-grey-dark-2;
+    color: $color-grey-light-2;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden;
+    box-shadow: 0 -5px 5px rgba($color-black,.5);
+    margin-top: 1rem;
+
+    @include respond(tab-land){ 
+        height: 50vh;
+    }
+
+    @include respond(phone){
+        height:80vh;
+    }
+ 
+
+    &-box1,
+    &-box2,
+    &-box3{
+        width: calc((100% - 2rem) / 3);
+        height: 80%;
+        display:inline-block;
+        padding:1rem 4rem;
+        position: relative;
+
+        @include respond(tab-port){
+            width: calc((100% - 1rem) / 3);
+        }
+
+    }
+
+    &-box1, &-box2{
+        @include respond(phone){
+            width: 100%;
+            height: 40%;
+            padding: 0.5rem 2rem;
+        }
+    }
+
+    &-box3{
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+    &-box4{
+        position: relative;
+        color: $color-grey-light-2;
+        width:100%;
+        height: 20%;
+        text-align: center; 
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    &-center-box{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        height: 100%;
+        top: 50%;
+        left:50%;
+        width: 70%;
+    }
+
+    &-title{
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 1.8rem;
+        margin-bottom: 1.5rem;
+
+        @include respond(tab-port){
+            margin: 0.8rem auto;
+        }
+    }
+
+    &-logo{
+        padding:2rem 4rem;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left:50%;
+        img{
+            height:10rem;
+        }
+    }
+
+    &-media-logo{
+        font-size: 1.8rem;
+        letter-spacing: 1rem;
+
+        i{
+            transition: all .4s;
+            &:hover{
+                transition: all 0.4s;
+                transform: translateY(-0.5rem);
+                color: $color-white;
+            }
+        }
+    }
+}
