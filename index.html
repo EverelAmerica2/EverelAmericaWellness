@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
      
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -19,15 +18,93 @@
     <meta name="description" content="Swimming pool services, maintaince" /> 
 </head>
 
-<body>
-    <main class="main" id="main">
-        <div class="bkg-cover">
-            <div class="center-box">
-                <p class="title-big text-center">Under Construction</p>
-                <p class="title-small text-center" style="columns: #888888">Comming Soon</p>
-                <p class="title-xs text-center"> Contact us: sales@everelameirca.com</p>
-            </div>
+<body class="body-container">
+    <header class="section-header">
+        <div class="video-big">
+            <video class="video-big__content" autoplay muted loop>
+                <source src="./img/coverr-steadycam-shot-pool-0520.mp4" type="video/mp4">
+                Your brower is not  supported!
+            </video>
         </div>
-    </main>
 
+        <div class="header-top"></div>
+        <nav class="header-nav" id='header-nav1'>
+            <a href="index.html" class="header-nav-item">Home</a>
+            <a href="about.html" class="header-nav-item">About the Company</a>
+            <a href="products.html" class="header-nav-item">Products</a>
+            <a href="distribution.html" class="header-nav-item">Sales Network</a>
+            <a href="contact.html" class="header-nav-item">Contact Us</a>
+        </nav>
+
+        <div class="navigation navigation-phone" id='nevigation-toggle-section'>
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link" ><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link" ><span>02</span>About Us</a></li>
+                    <li class="navigation__item"><a href="products.html" class="navigation__link" ><span>03</span>Products</a></li>
+                    <li class="navigation__item"><a href="distribution.html" class="navigation__link" ><span>04</span>Sales Network</a></li>
+                    <li class="navigation__item"><a href="contact.html" class="navigation__link" ><span>05</span>Contact Us</a></li>
+                    </ul>
+            </nav>
+        </div>
+
+        <div class="header-content">
+            <div class="header-content-text">Custom Pools | Aquatic Equipments | Water Features</div>
+            <h1 class="header-content-title">Custom Pools</h1>
+        </div>
+
+        <button  class="header-scroll" id='header-scroll' onclick='scrollArrow()'>&lsaquo;</button>
+    </header>
+
+    <main class="main" id="main">
+        <section class="section-brands"></section>
+        <section class="section-intro">
+            <div class="intro-content">
+                <div class="intro-content-title title-small margin-bottom-medium">Welcome to Everel America Pool and Wellness</div>
+                <div class="intro-content-text">
+                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, non. Fugit suscipit quas, veniam harum, tenetur natus nemo magni, est corporis accusantium eaque odio quibusdam dolorem nulla totam voluptatum accusamus.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, neque. Aut dolorem, doloribus explicabo esse asperiores nesciunt eius debitis architecto perferendis dolores voluptate culpa maxime vero illo adipisci deserunt. Commodi!
+                    </div>
+                    </br>
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt cum suscipit magni earum optio quaerat. Officia harum, magnam illum, explicabo ea quidem nulla nostrum veritatis sequi sunt qui fuga. Similique!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequatur labore asperiores dignissimos dolor ex illum magni quos tempora id sit ab quisquam vel aliquid, porro velit ut commodi architecto!
+                    </div>
+                </div>
+                <div class="intro-content-img"></div>
+            </div>
+        </section>
+        <section class="section-services"> <p style="text-align:center; font-size: 3rem; font-weight: 600;">list the services we have in this section</p></section>
+        <section class="section-procedure">
+            <div class="procedure-content">
+                <div class="procedure-content-title title-small text-center">Our Work Procedure</div>
+                <div class="procedure-content-text text-center margin-bottom-medium">It's easy to build your custom pool with us...</div>
+                <div class="procedure-content-1">
+                    <div class="procedure-content-subtitle title-xs">Consult</div>
+                    <div class="procedure-content-text"></div>
+                </div>
+                <div class="procedure-content-2">
+                    <div class="procedure-content-subtitle"></div>
+                    <div class="procedure-content-text"></div>
+                </div>
+                <div class="procedure-content-3">
+                    <div class="procedure-content-subtitle"></div>
+                    <div class="procedure-content-text"></div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section-feedback"></section> -->
+        <section class="section-latest"></section>
+    </main>
+    <footer class="section-footer">
+
+    </footer>
+    <script src='./js/index.js'></script>
 </body>

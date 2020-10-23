@@ -34,6 +34,7 @@ $gutter-horizontal: 2rem;
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: 'Commissioner', sans-serif;
 
     @include respond(tab-land) { 
         font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
@@ -115,7 +116,7 @@ a{
 }
 
 .title-xs{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 
     @include respond(phone){
