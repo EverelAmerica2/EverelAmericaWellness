@@ -6,10 +6,11 @@
 @import "header";
 @import "video";
 
-@import "brands";
-@import "intro";
-@import "latest";
-@import "procedure";
-@import "services";
+@import "./sections/brands";
+@import "./sections/intro";
+@import "./sections/latest";
+@import "./sections/procedure";
+@import "./sections/services";
+@import "./sections/contact";
 
 //@import "UnderConstruction"; 

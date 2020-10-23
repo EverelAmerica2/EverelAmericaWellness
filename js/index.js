@@ -61,10 +61,10 @@ const printNavigation = function(){
     $('.header-nav').append(`
         <a href="${prefix}index.html" class="header-nav-item">Home</a>
         <a href="${prefix}about.html" class="header-nav-item">About the Company</a>
-        <a href="${prefix}news.html" class="header-nav-item">News</a>
+        <a href="#news" class="header-nav-item">News</a>
         <a href="${prefix}products.html" class="header-nav-item">Products</a>
         <a href="${prefix}distribution.html" class="header-nav-item">Sales Network</a>
-        <a href="${prefix}contact.html" class="header-nav-item">Contact Us</a>
+        <a href="#contact" class="header-nav-item">Contact Us</a>
     `);
 
     $('.navigation__nav').empty();
@@ -72,10 +72,10 @@ const printNavigation = function(){
     <ul class="navigation__list">
         <li class="navigation__item"><a href="${prefix}index.html" class="navigation__link" ><span>01</span>Home</a></li>
         <li class="navigation__item"><a href="${prefix}about.html" class="navigation__link" ><span>02</span>About Us</a></li>
-        <li class="navigation__item"><a href="${prefix}news.html" class="navigation__link" ><span>03</span>News</a></li>
+        <li class="navigation__item"><a href="#news" class="navigation__link" ><span>03</span>News</a></li>
         <li class="navigation__item"><a href="${prefix}products.html" class="navigation__link" ><span>04</span>Products</a></li>
         <li class="navigation__item"><a href="${prefix}distribution.html" class="navigation__link" ><span>05</span>Sales Network</a></li>
-        <li class="navigation__item"><a href="${prefix}contact.html" class="navigation__link" ><span>06</span>Contact Us</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link" ><span>06</span>Contact Us</a></li>
     </ul>
     `);
 }

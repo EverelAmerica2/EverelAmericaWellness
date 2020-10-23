@@ -19,6 +19,12 @@ html {
 body {
   box-sizing: border-box; }
 
+.margin-bottom-xl {
+  margin-bottom: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-xl {
+      margin-bottom: 4rem; } }
+
 .margin-bottom-large {
   margin-bottom: 4rem; }
   @media only screen and (max-width: 37.5em) {
@@ -535,26 +541,93 @@ a {
   width: 100%;
   height: 90vh; }
 
+.latest-content {
+  padding: 2rem;
+  padding-top: 8rem;
+  width: 70%;
+  margin: auto; }
+  .latest-content-title {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase; }
+  .latest-content-subtitle {
+    color: #000;
+    text-transform: uppercase; }
+  .latest-content-text {
+    font-size: 2rem;
+    color: #535353;
+    line-height: 1.5; }
+  .latest-content-box-1, .latest-content-box-2, .latest-content-box-3 {
+    position: relative;
+    width: calc((100% - 4 * 2rem) / 3);
+    height: 60vh;
+    border: 1px solid rgba(83, 83, 83, 0.5);
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(83, 83, 83, 0.4);
+    transition: .4s; }
+    .latest-content-box-1:hover, .latest-content-box-2:hover, .latest-content-box-3:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0.8rem 0.8rem 0.8rem rgba(83, 83, 83, 0.4); }
+  .latest-content [class^="latest-content-box-"] {
+    float: left; }
+    .latest-content [class^="latest-content-box-"]:not(:last-child) {
+      margin-right: calc(2 * 2rem); }
+      @media only screen and (max-width: 56.25em) {
+        .latest-content [class^="latest-content-box-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 0rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .latest-content [class^="latest-content-box-"] {
+        width: 100% !important; } }
+
 .section-procedure {
   width: 100%;
-  height: 70vh; }
+  height: 70vh;
+  background-color: rgba(249, 247, 246, 0.8);
+  position: relative; }
 
 .procedure-content {
-  padding: 2rem; }
+  padding: 2rem;
+  padding-top: 8rem;
+  width: 70%;
+  margin: auto; }
   .procedure-content-title {
     text-align: center;
     color: #000;
     text-transform: uppercase; }
   .procedure-content-subtitle {
-    color: #101d2c;
+    color: #000;
     text-transform: uppercase; }
   .procedure-content-text {
     font-size: 2rem;
     color: #535353;
     line-height: 1.5; }
+  .procedure-content-bkg-text {
+    color: rgba(170, 170, 170, 0.4);
+    font-size: 14rem;
+    position: absolute;
+    top: -1rem;
+    left: 0rem; }
+  .procedure-content-box-1, .procedure-content-box-2, .procedure-content-box-3 {
+    position: relative;
+    width: calc((100% - 4 * 2rem) / 3); }
+  .procedure-content [class^="procedure-content-box-"] {
+    float: left; }
+    .procedure-content [class^="procedure-content-box-"]:not(:last-child) {
+      margin-right: calc(2 * 2rem); }
+      @media only screen and (max-width: 56.25em) {
+        .procedure-content [class^="procedure-content-box-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 0rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .procedure-content [class^="procedure-content-box-"] {
+        width: 100% !important; } }
 
 .section-services {
   width: 100%;
   height: 20vh;
   padding: 4rem;
   border: 2px solid #535353; }
+
+.section-contact {
+  width: 100%;
+  height: 30vh; }

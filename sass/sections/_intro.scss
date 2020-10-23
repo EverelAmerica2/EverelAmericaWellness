@@ -25,7 +25,7 @@
             width: calc(100% - 4rem);
             height: 30vh;
             margin: 2rem;
-            background-image: url(../img/woman-918532_1920.jpg);
+            background-image: url(../img/woman-918532_1920.jpg);    //need tp be relative path when it's in css folder
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
