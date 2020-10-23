@@ -1,0 +1,288 @@
+.section-header{
+    height: 100vh;
+    //background-image:linear-gradient(to left, rgba($color-primary,0.8), rgba($color-primary, 0.9)),url('../img/statue-of-liberty.jpg');
+    //background-size: cover;     
+    //background-position: top;
+    position:relative;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px rgba($color-black,.5);
+}
+
+.header{
+    height: 100%;
+    color:$color-grey-light-2;
+    padding:2rem 4rem; 
+    line-height: 1.5;
+
+    @include respond(tab-port){
+        padding: 1rem;
+    }
+
+    &-logo{
+        // font-size: 5rem;
+        //width:20rem;
+        background-image: radial-gradient(circle,rgba($color-grey-light-2,.5) 0%,rgba($color-grey-light-2,.3) 20%,rgba($color-grey-light-2,.1) 40%, rgba($color-grey-light-2, 0) 60%);
+        width:20rem;
+        height: 15rem;
+        //float: left;
+        position: relative;
+
+        @include respond(tab-port){
+            width:15rem;
+            height:9rem;
+        }
+
+        img{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top:50%;
+            left: 50%;
+            width: 20rem;
+
+            @include respond(tab-port){
+                width:15rem;
+            }
+        }
+    }
+
+    &-top{
+        height: 8rem;
+        width: 100%;
+        background-color: $color-white;
+        box-shadow: 0 2px 2px -2px $color-grey-light-2;
+    }
+
+    &-nav{
+        font-size: 2rem;
+        position: absolute;
+        top:3rem;
+        right:4rem;
+        text-transform: uppercase;
+
+        &-item{
+            text-decoration: none;
+            color:$color-grey-dark-1;
+
+            &:hover{
+                color: $color-white;
+            }
+
+            &:not(:last-child){
+                margin-right:1.8rem;
+            }
+        }
+
+        a{
+            &:hover{
+                color: $color-primary;
+            }
+        }
+
+        @include respond(tab-port){
+            display: none;
+            
+        }
+    }
+
+    &-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        @include respond(tab-port){
+            width: 80%;
+            text-align: center;
+        }
+
+
+        &-title{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 10rem;
+            // border-bottom: 0.4rem solid $color-grey-light-2;
+            color: $color-white;
+            display: block;
+            margin:auto;
+            //animation: moveInLeft .5s ease-in;
+
+            @include respond(phone){
+                font-size: 3rem;
+            }
+        }
+ 
+        &-text{
+            font-size: 2rem;
+            color:$color-white;
+            display: block;
+            margin:auto;
+            //animation: moveInRight .5s ease-in;
+
+            @include respond(phone){
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &-scroll{
+        font-size: 10rem;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(270deg);
+        background:none;
+        border:none;
+        color: rgba($color-black,.5);
+
+        &:hover{
+            cursor: pointer;
+            color: rgba($color-primary,0.8);
+        }
+
+        &:focus{
+            outline:none;
+        }
+    }
+
+    &-pic{
+        position: absolute;
+        left:4rem;
+        width:13.5%;
+        height:78%;
+        overflow: hidden;
+        //animation: moveInFarLeft 3s ease-in;
+
+        
+        &-img{
+            height: 10rem;
+            width: 9rem;
+            object-fit: contain;
+            //animation: moveInTopBounce 3s;
+            @include respond(tab-land){
+                height: 8rem;
+                width: 7rem;
+            }
+            
+        }
+
+        @include respond(tab-port){
+            display: none;
+        }
+    }
+
+}
+
+#header-nav2{
+    display: none;
+}
+
+.sticky{
+    position: fixed;
+    top: 0rem;
+    left:0rem;
+    width: 100%;
+    padding: 3rem;
+    background-color: $color-white;
+    box-shadow: 0 2px 2px -2px $color-grey-light-2;
+    z-index: 2;
+    text-transform:uppercase;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+@keyframes moveInLeft {
+    0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+    80% {
+    transform: translateX(1rem); }
+    100% {
+    opacity: 1;
+    transform: translate(0); } }
+  
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20rem); }
+    80% {
+      transform: translateX(-1rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); }
+    100% {
+        opacity: 1;
+        transform: translate(0); } }
+
+@keyframes moveInTopBounce{
+
+    0% {
+        opacity: 0;
+        transform: translateY(-90vh); 
+        animation-timing-function: ease-in;
+    }
+    9% {
+        transform: translateY(0vh);
+        animation-timing-function: ease-out;
+    }
+    18%{
+        transform: translateY(-45vh);
+        animation-timing-function: ease-in;
+    }
+    27%{
+        transform: translateY(0vh);
+        animation-timing-function: ease-out;
+    }
+    36%{
+        transform: translateY(-27vh);
+        animation-timing-function: ease-in;
+    }
+    45%{
+        transform: translateY(0vh);
+        animation-timing-function: ease-out;
+    }
+    54%{
+        transform: translateY(-16vh);
+        animation-timing-function: ease-in;
+    }
+    63%{
+        transform: translateY(0vh);
+        animation-timing-function: ease-out;
+    }
+    72%{
+        transform: translateY(-9vh);
+        animation-timing-function: ease-in;
+    }
+    81%{
+        transform: translateY(0vh);
+        animation-timing-function: ease-out;
+    }
+    90%{
+        transform: translateY(0vh);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0vh); 
+        animation-timing-function: ease-out;
+    } 
+}
+
+@keyframes moveInFarLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-45vw); 
+        
+    }  
+    100% {
+
+        transform: translateX(0); 
+    } 
+}
