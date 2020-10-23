@@ -1,6 +1,7 @@
 .section-latest{
     width: 100%;
     height: 90vh;
+    //padding-bottom: 6rem;
 }
 
 .latest-content{
@@ -21,19 +22,19 @@
     }
 
     &-text{
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: $color-grey-dark-1;
         line-height: 1.5;  
     }
 
     &-box{
         &-1, &-2, &-3{
-            position: relative;
             width: calc((100% - 4 * #{$gutter-horizontal}) / 3) ;
             height: 60vh;
             border: 1px solid rgba($color-grey-dark-1, .5);
             box-shadow: 0.1rem 0.1rem 0.1rem rgba($color-grey-dark-1, .4);
             transition: .4s;
+            margin-top: calc(#{$gutter-horizontal});
 
             &:hover{
                 transform: translateY(-1rem);

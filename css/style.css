@@ -361,7 +361,7 @@ a {
         .header-content-title {
           font-size: 3rem; } }
     .header-content-text {
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: #fff;
       display: block;
       margin: auto; }
@@ -511,7 +511,7 @@ a {
 
 .section-intro {
   width: 100%;
-  height: 100vh; }
+  height: 80vh; }
 
 .intro-content {
   width: 50%;
@@ -522,7 +522,7 @@ a {
   .intro-content-title {
     text-transform: uppercase; }
   .intro-content-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5;
     color: #535353; }
   .intro-content-img {
@@ -554,16 +554,16 @@ a {
     color: #000;
     text-transform: uppercase; }
   .latest-content-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #535353;
     line-height: 1.5; }
   .latest-content-box-1, .latest-content-box-2, .latest-content-box-3 {
-    position: relative;
     width: calc((100% - 4 * 2rem) / 3);
     height: 60vh;
     border: 1px solid rgba(83, 83, 83, 0.5);
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(83, 83, 83, 0.4);
-    transition: .4s; }
+    transition: .4s;
+    margin-top: calc(2rem); }
     .latest-content-box-1:hover, .latest-content-box-2:hover, .latest-content-box-3:hover {
       transform: translateY(-1rem);
       box-shadow: 0.8rem 0.8rem 0.8rem rgba(83, 83, 83, 0.4); }
@@ -581,8 +581,8 @@ a {
 
 .section-procedure {
   width: 100%;
-  height: 70vh;
-  background-color: rgba(249, 247, 246, 0.8);
+  height: 50vh;
+  background-color: rgba(249, 247, 246, 0.9);
   position: relative; }
 
 .procedure-content {
@@ -598,7 +598,7 @@ a {
     color: #000;
     text-transform: uppercase; }
   .procedure-content-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #535353;
     line-height: 1.5; }
   .procedure-content-bkg-text {
@@ -617,7 +617,7 @@ a {
       @media only screen and (max-width: 56.25em) {
         .procedure-content [class^="procedure-content-box-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 0rem; } }
+          margin-bottom: 3rem; } }
     @media only screen and (max-width: 56.25em) {
       .procedure-content [class^="procedure-content-box-"] {
         width: 100% !important; } }
@@ -630,4 +630,148 @@ a {
 
 .section-contact {
   width: 100%;
-  height: 30vh; }
+  padding-bottom: 10rem;
+  color: #535353;
+  background-color: rgba(249, 247, 246, 0.9); }
+
+.contact-form {
+  padding: 2rem 4rem;
+  width: 100%;
+  font-size: 2rem; }
+  .contact-form-title {
+    width: 50%;
+    margin: 3rem auto;
+    color: #000;
+    text-transform: uppercase; }
+  .contact-form-content {
+    width: 50%;
+    line-height: 1.5;
+    margin: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form-content {
+        width: 100%; } }
+  .contact-form-text {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: justify; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form-text {
+        width: 90%; } }
+  .contact-form-name, .contact-form-company, .contact-form-email, .contact-form-number {
+    font-size: inherit;
+    width: 70%;
+    line-height: 2; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form-name, .contact-form-company, .contact-form-email, .contact-form-number {
+        width: 90%; } }
+  .contact-form-msg {
+    font-size: inherit;
+    width: 70%;
+    line-height: 1.5;
+    font-size: 2.5rem;
+    height: 16rem; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form-msg {
+        width: 90%; } }
+  .contact-form button {
+    display: block;
+    margin: auto;
+    font-size: inherit;
+    line-height: 1.5;
+    height: 6rem;
+    width: 10rem;
+    font-size: 2.5rem;
+    color: #f9f7f6;
+    background-color: #000;
+    border: 0.2rem solid #000;
+    border-radius: .4rem;
+    transition: .4s;
+    box-shadow: 0.4rem 0.8rem 0.8rem rgba(0, 0, 0, 0.4); }
+    .contact-form button:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      transform: translateY(0.1rem) scale(0.95);
+      box-shadow: none; }
+
+.section-footer {
+  width: 100%;
+  height: 40vh; }
+
+.footer {
+  width: 100%;
+  padding: 2rem;
+  height: 40vh;
+  background-color: #131313;
+  color: #aaa;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  overflow: hidden;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem; }
+  @media only screen and (max-width: 81.25em) {
+    .footer {
+      height: 50vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      height: 80vh; } }
+  .footer-box1, .footer-box2, .footer-box3 {
+    width: calc((100% - 2rem) / 3);
+    height: 80%;
+    display: inline-block;
+    padding: 1rem 4rem;
+    position: relative; }
+    @media only screen and (max-width: 56.25em) {
+      .footer-box1, .footer-box2, .footer-box3 {
+        width: calc((100% - 1rem) / 3); } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-box1, .footer-box2 {
+      width: 100%;
+      height: 40%;
+      padding: 0.5rem 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-box3 {
+      display: none; } }
+  .footer-box4 {
+    position: relative;
+    color: #aaa;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase; }
+  .footer-center-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    width: 70%; }
+  .footer-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer-title {
+        margin: 0.8rem auto; } }
+  .footer-logo {
+    padding: 2rem 4rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+    .footer-logo img {
+      height: 10rem; }
+  .footer-media-logo {
+    font-size: 1.8rem;
+    letter-spacing: 1rem; }
+    .footer-media-logo i {
+      transition: all .4s; }
+      .footer-media-logo i:hover {
+        transition: all 0.4s;
+        transform: translateY(-0.5rem);
+        color: #fff; }
