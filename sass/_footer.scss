@@ -101,6 +101,7 @@
 
         i{
             transition: all .4s;
+            color: $color-grey-light-2;
             &:hover{
                 transition: all 0.4s;
                 transform: translateY(-0.5rem);

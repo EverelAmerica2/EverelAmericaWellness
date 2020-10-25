@@ -9,6 +9,10 @@
     width: 70%;
     margin: auto;
 
+    @include respond(tab-land) {
+        width: 90% !important;
+    }
+
     &-title{
         text-align: center;
         color: $color-black;
@@ -26,24 +30,69 @@
         line-height: 1.5;  
     }
 
-    &-box{
-        &-1, &-2, &-3{
-            width: calc((100% - 4 * #{$gutter-horizontal}) / 3) ;
-            height: 60vh;
-            border: 1px solid rgba($color-grey-dark-1, .5);
-            box-shadow: 0.1rem 0.1rem 0.1rem rgba($color-grey-dark-1, .4);
-            transition: .4s;
-            margin-top: calc(#{$gutter-horizontal});
+    &-top{
+        width: 100%;
+        height: 45%;
+        background-size: cover;
+
+        &__1{
+            background-image: url("../img/swimming-2392283_1920.jpg");
+        }
+        &__2{
+            background-image: url("../img/swimming-2392283_1920.jpg");
+        }
+        &__3{
+            background-image: url("../img/swimming-2392283_1920.jpg");
+        }
+    }
+
+    &-bottom{
+        line-height: 1.5;
+        display: block;
+        margin: auto;
+        padding: 2rem 4rem;
+        
+        &__title{
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        &__text{
+            font-size: 1.7rem;
+            color: $color-grey-dark-1;
+        }
+
+        &__link{
+            font-size: 1.7rem;
+            padding: 0.5rem 3rem;
+            text-transform: uppercase;
+            color: $color-grey-light-2;
+            background-color: $color-grey-dark-2;
+            position: absolute;
+            bottom: 3%;
+            transition: all .4s;
 
             &:hover{
-                transform: translateY(-1rem);
-                box-shadow: 0.8rem 0.8rem 0.8rem rgba($color-grey-dark-1, .4);
+                background-color: rgba($color-grey-dark-2, .7);
             }
         }
     }
 
     [class^="latest-content-box-"] {
         display: inline-block;
+        vertical-align: top;
+        height: 70vh;
+        width: calc((100% - 4 * #{$gutter-horizontal}) / 3) ;
+        border: 1px solid rgba($color-grey-dark-1, .5);
+        box-shadow: 0.1rem 0.1rem 0.1rem rgba($color-grey-dark-1, .4);
+        transition: .4s;
+        margin-top: calc(#{$gutter-horizontal});
+        position: relative;
+
+        &:hover{
+            transform: translateY(-1rem);
+            box-shadow: 0.8rem 0.8rem 0.8rem rgba($color-grey-dark-1, .4);
+        }
 
         &:not(:last-child) {
             margin-right: calc(1.8 * #{$gutter-horizontal});

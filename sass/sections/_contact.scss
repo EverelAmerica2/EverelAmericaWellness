@@ -10,18 +10,27 @@
     padding: 2rem 4rem;
     width:100%;
     font-size: 2rem;
+
+
     
     &-title{
         width:50%;
         margin: 3rem auto;
         color:$color-black;
         text-transform: uppercase;
+        @include respond(tab-land) {
+            width: 70% !important;
+        }
     }
 
     &-content{
         width:50%;
         line-height: 1.5;
         margin: auto;
+
+        @include respond(tab-land) {
+            width: 70% !important;
+        }
         @include respond(phone){
             width: 100%;
         }
@@ -35,6 +44,9 @@
         margin-bottom: 2rem;
         text-align: justify;
 
+        @include respond(tab-land) {
+            width: 70% !important;
+        }
         @include respond(phone){
             width: 90%;
         }
