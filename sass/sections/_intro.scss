@@ -11,6 +11,10 @@
         text-align: center;;
         padding: 2rem;
 
+        @include respond(tab-land) {
+            width: 70% !important;
+        }
+
         &-title{
             text-transform: uppercase;
         }

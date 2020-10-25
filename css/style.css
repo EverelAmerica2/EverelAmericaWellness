@@ -47,10 +47,7 @@ body {
   margin-bottom: 1rem; }
 
 a {
-  text-decoration: none;
-  color: #aaa; }
-  a:hover {
-    color: #fff; }
+  text-decoration: none; }
 
 .title-big {
   font-size: 5rem;
@@ -345,7 +342,8 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    width: 90%; }
     @media only screen and (max-width: 56.25em) {
       .header-content {
         width: 80%;
@@ -518,6 +516,9 @@ a {
   margin: auto;
   text-align: center;
   padding: 2rem; }
+  @media only screen and (max-width: 81.25em) {
+    .intro-content {
+      width: 70% !important; } }
   .intro-content-title {
     text-transform: uppercase; }
   .intro-content-text {
@@ -544,6 +545,9 @@ a {
   padding-top: 8rem;
   width: 70%;
   margin: auto; }
+  @media only screen and (max-width: 81.25em) {
+    .latest-content {
+      width: 90% !important; } }
   .latest-content-title {
     text-align: center;
     color: #000;
@@ -555,18 +559,51 @@ a {
     font-size: 2rem;
     color: #535353;
     line-height: 1.5; }
-  .latest-content-box-1, .latest-content-box-2, .latest-content-box-3 {
+  .latest-content-top {
+    width: 100%;
+    height: 45%;
+    background-size: cover; }
+    .latest-content-top__1 {
+      background-image: url("../img/swimming-2392283_1920.jpg"); }
+    .latest-content-top__2 {
+      background-image: url("../img/swimming-2392283_1920.jpg"); }
+    .latest-content-top__3 {
+      background-image: url("../img/swimming-2392283_1920.jpg"); }
+  .latest-content-bottom {
+    line-height: 1.5;
+    display: block;
+    margin: auto;
+    padding: 2rem 4rem; }
+    .latest-content-bottom__title {
+      font-size: 2rem;
+      text-transform: uppercase; }
+    .latest-content-bottom__text {
+      font-size: 1.7rem;
+      color: #535353; }
+    .latest-content-bottom__link {
+      font-size: 1.7rem;
+      padding: 0.5rem 3rem;
+      text-transform: uppercase;
+      color: #aaa;
+      background-color: #131313;
+      position: absolute;
+      bottom: 3%;
+      transition: all .4s; }
+      .latest-content-bottom__link:hover {
+        background-color: rgba(19, 19, 19, 0.7); }
+  .latest-content [class^="latest-content-box-"] {
+    display: inline-block;
+    vertical-align: top;
+    height: 70vh;
     width: calc((100% - 4 * 2rem) / 3);
-    height: 60vh;
     border: 1px solid rgba(83, 83, 83, 0.5);
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(83, 83, 83, 0.4);
     transition: .4s;
-    margin-top: calc(2rem); }
-    .latest-content-box-1:hover, .latest-content-box-2:hover, .latest-content-box-3:hover {
+    margin-top: calc(2rem);
+    position: relative; }
+    .latest-content [class^="latest-content-box-"]:hover {
       transform: translateY(-1rem);
       box-shadow: 0.8rem 0.8rem 0.8rem rgba(83, 83, 83, 0.4); }
-  .latest-content [class^="latest-content-box-"] {
-    display: inline-block; }
     .latest-content [class^="latest-content-box-"]:not(:last-child) {
       margin-right: calc(1.8 * 2rem); }
       @media only screen and (max-width: 56.25em) {
@@ -587,6 +624,9 @@ a {
   width: 70%;
   position: relative;
   margin: auto; }
+  @media only screen and (max-width: 81.25em) {
+    .procedure-content {
+      width: 90% !important; } }
   .procedure-content-title {
     text-align: center;
     color: #000;
@@ -604,11 +644,11 @@ a {
     position: absolute;
     top: -1rem;
     left: 0rem; }
-  .procedure-content-box-1, .procedure-content-box-2, .procedure-content-box-3 {
+  .procedure-content [class^="procedure-content-box-"] {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
     width: calc((100% - 4 * 2rem) / 3); }
-  .procedure-content [class^="procedure-content-box-"] {
-    display: inline-block; }
     .procedure-content [class^="procedure-content-box-"]:not(:last-child) {
       margin-right: calc(1.8 * 2rem); }
       @media only screen and (max-width: 56.25em) {
@@ -640,10 +680,16 @@ a {
     margin: 3rem auto;
     color: #000;
     text-transform: uppercase; }
+    @media only screen and (max-width: 81.25em) {
+      .contact-form-title {
+        width: 70% !important; } }
   .contact-form-content {
     width: 50%;
     line-height: 1.5;
     margin: auto; }
+    @media only screen and (max-width: 81.25em) {
+      .contact-form-content {
+        width: 70% !important; } }
     @media only screen and (max-width: 37.5em) {
       .contact-form-content {
         width: 100%; } }
@@ -654,6 +700,9 @@ a {
     line-height: 1.5;
     margin-bottom: 2rem;
     text-align: justify; }
+    @media only screen and (max-width: 81.25em) {
+      .contact-form-text {
+        width: 70% !important; } }
     @media only screen and (max-width: 37.5em) {
       .contact-form-text {
         width: 90%; } }
@@ -765,7 +814,8 @@ a {
     font-size: 1.8rem;
     letter-spacing: 1rem; }
     .footer-media-logo i {
-      transition: all .4s; }
+      transition: all .4s;
+      color: #aaa; }
       .footer-media-logo i:hover {
         transition: all 0.4s;
         transform: translateY(-0.5rem);
