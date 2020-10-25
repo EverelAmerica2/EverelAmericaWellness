@@ -537,8 +537,7 @@ a {
       transform: translateY(-1em); }
 
 .section-latest {
-  width: 100%;
-  height: 100vh; }
+  width: 100%; }
 
 .latest-content {
   padding: 2rem;
@@ -567,9 +566,9 @@ a {
       transform: translateY(-1rem);
       box-shadow: 0.8rem 0.8rem 0.8rem rgba(83, 83, 83, 0.4); }
   .latest-content [class^="latest-content-box-"] {
-    float: left; }
+    display: inline-block; }
     .latest-content [class^="latest-content-box-"]:not(:last-child) {
-      margin-right: calc(2 * 2rem); }
+      margin-right: calc(1.8 * 2rem); }
       @media only screen and (max-width: 56.25em) {
         .latest-content [class^="latest-content-box-"]:not(:last-child) {
           margin-right: 0;
@@ -580,14 +579,13 @@ a {
 
 .section-procedure {
   width: 100%;
-  height: 50vh;
-  background-color: rgba(249, 247, 246, 0.9);
-  position: relative; }
+  background-color: rgba(249, 247, 246, 0.9); }
 
 .procedure-content {
   padding: 2rem;
   padding-top: 8rem;
   width: 70%;
+  position: relative;
   margin: auto; }
   .procedure-content-title {
     text-align: center;
@@ -610,9 +608,9 @@ a {
     position: relative;
     width: calc((100% - 4 * 2rem) / 3); }
   .procedure-content [class^="procedure-content-box-"] {
-    float: left; }
+    display: inline-block; }
     .procedure-content [class^="procedure-content-box-"]:not(:last-child) {
-      margin-right: calc(2 * 2rem); }
+      margin-right: calc(1.8 * 2rem); }
       @media only screen and (max-width: 56.25em) {
         .procedure-content [class^="procedure-content-box-"]:not(:last-child) {
           margin-right: 0;

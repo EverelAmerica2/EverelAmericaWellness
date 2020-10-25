@@ -1,6 +1,6 @@
 .section-latest{
     width: 100%;
-    height: 100vh;
+
 }
 
 .latest-content{
@@ -43,10 +43,10 @@
     }
 
     [class^="latest-content-box-"] {
-        float: left;
+        display: inline-block;
 
         &:not(:last-child) {
-            margin-right: calc(2 * #{$gutter-horizontal});
+            margin-right: calc(1.8 * #{$gutter-horizontal});
 
             @include respond(tab-port) {
                 margin-right: 0;
