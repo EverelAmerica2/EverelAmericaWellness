@@ -660,10 +660,111 @@ a {
         width: 100% !important; } }
 
 .section-services {
-  width: 100%;
-  height: 20vh;
-  padding: 4rem;
-  border: 2px solid #535353; }
+  width: 100%; }
+
+.service-content {
+  width: 70%;
+  padding: 8rem 2rem;
+  display: block;
+  margin: auto;
+  line-height: 1.5; }
+  @media only screen and (max-width: 81.25em) {
+    .service-content {
+      width: 90% !important; } }
+
+.service-box {
+  display: inline-block;
+  width: calc((100% - 2 * 2rem) / 2);
+  height: 50vh;
+  border: 1px solid rgba(83, 83, 83, 0.5);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(83, 83, 83, 0.4);
+  margin-top: calc(2rem);
+  transition: .4s;
+  vertical-align: top;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .service-box {
+      width: 100% !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .service-box {
+      height: 70vh; } }
+  .service-box-left {
+    margin-right: calc(1.8 * 2rem); }
+    @media only screen and (max-width: 37.5em) {
+      .service-box-left {
+        margin-right: 0; } }
+  .service-box:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0.8rem 0.8rem 0.8rem rgba(83, 83, 83, 0.4); }
+  .service-box-title {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .service-box-text {
+    font-size: 1.7rem;
+    color: #535353; }
+  .service-box-link {
+    font-size: 1.7rem;
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+    color: #aaa;
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+    transition: all .4s;
+    height: 3rem;
+    width: 50%; }
+    .service-box-link:hover {
+      color: #131313; }
+    .service-box-link:hover .service-box-link__text {
+      transform: translateX(-11rem) translateY(-1.5rem);
+      background-color: none; }
+    .service-box-link:hover .service-box-link__arrow {
+      transform: translateX(-3rem) translateY(-1.5rem);
+      z-index: 1; }
+    .service-box-link__text {
+      z-index: 1;
+      position: absolute;
+      height: 3rem;
+      width: 20rem;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .4s;
+      background-color: #fff; }
+    .service-box-link__arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 3rem;
+      width: 20rem;
+      z-index: -1;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      transition: all .4s; }
+  .service-box-first {
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    background-size: cover; }
+    .service-box-first__1 {
+      background-image: url("../img/swimming-2392283_1920.jpg"); }
+    @media only screen and (max-width: 37.5em) {
+      .service-box-first {
+        width: 100%;
+        height: 45%; } }
+  .service-box-second {
+    height: 100%;
+    width: 55%;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    padding: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .service-box-second {
+        width: 100%;
+        height: 54%; } }
 
 .section-contact {
   width: 100%;
@@ -738,7 +839,7 @@ a {
       text-decoration: underline;
       cursor: pointer;
       transform: translateY(0.1rem) scale(0.95);
-      box-shadow: none; }
+      box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4); }
 
 .section-footer {
   width: 100%;
