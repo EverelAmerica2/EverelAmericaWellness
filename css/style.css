@@ -319,6 +319,12 @@ a {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 2px -2px #aaa; }
+    .header-top-logo {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: 4rem;
+      height: 6rem; }
   .header-nav {
     font-size: 2rem;
     position: absolute;
@@ -521,7 +527,7 @@ a {
     display: inline-block;
     margin-right: 3rem;
     overflow: hidden;
-    animation: moveSlideshow 16s linear infinite; }
+    animation: moveSlideshow 10s linear infinite; }
 
 @keyframes moveSlideshow {
   100% {

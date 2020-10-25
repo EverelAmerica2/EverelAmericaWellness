@@ -85,7 +85,7 @@ printNavigation();
  *sticky feature for nav-bar 
  */
 function navSticky(x) {
-    let navbar1 = document.getElementById('header-nav1');
+    let navbar1 = document.getElementById('header-top');
 
 
     if (x.matches) {

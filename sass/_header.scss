@@ -50,6 +50,15 @@
         width: 100%;
         background-color: $color-white;
         box-shadow: 0 2px 2px -2px $color-grey-light-2;
+
+
+        &-logo{
+            display: block;
+            position: absolute;
+            top: 1rem;
+            left: 4rem;
+            height: 6rem;
+        }
     }
 
     &-nav{
