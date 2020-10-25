@@ -87,7 +87,7 @@
     }
 
 
-    //FUNCTIONALITY
+ //   FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
@@ -96,9 +96,18 @@
         opacity: 1;
         width: 100%;
         z-index:1500;
-        //display: inline-block;
+
     }
 
+    // &__link:visited ~ &__background{
+    //     transform: scale(0.0125);
+    // }
+
+    // &__link:visited ~ &__nav{
+    //     z-index: -100;
+    //     opacity: 0;
+    //     width: 0;
+    // }
 
     //ICON
     &__icon {
@@ -156,4 +165,17 @@
         display: inline-block;
         
     }
+}
+
+.activeBkg{
+    //transform: scale(80);
+    height: 480rem;
+    width: 480rem;
+}
+
+.activeNav {
+    opacity: 1;
+    width: 100%;
+    z-index:1500;
+
 }

@@ -282,6 +282,15 @@ a {
     .navigation-phone {
       display: inline-block; } }
 
+.activeBkg {
+  height: 480rem;
+  width: 480rem; }
+
+.activeNav {
+  opacity: 1;
+  width: 100%;
+  z-index: 1500; }
+
 .section-header {
   height: 100vh;
   position: relative;
@@ -296,24 +305,6 @@ a {
   @media only screen and (max-width: 56.25em) {
     .header {
       padding: 1rem; } }
-  .header-logo {
-    background-image: radial-gradient(circle, rgba(170, 170, 170, 0.5) 0%, rgba(170, 170, 170, 0.3) 20%, rgba(170, 170, 170, 0.1) 40%, rgba(170, 170, 170, 0) 60%);
-    width: 20rem;
-    height: 15rem;
-    position: relative; }
-    @media only screen and (max-width: 56.25em) {
-      .header-logo {
-        width: 15rem;
-        height: 9rem; } }
-    .header-logo img {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      width: 20rem; }
-      @media only screen and (max-width: 56.25em) {
-        .header-logo img {
-          width: 15rem; } }
   .header-top {
     height: 8rem;
     width: 100%;
@@ -325,6 +316,12 @@ a {
       top: 1rem;
       left: 4rem;
       height: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .header-top-logo {
+          display: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .header-top {
+        display: none; } }
   .header-nav {
     font-size: 2rem;
     position: absolute;
@@ -404,9 +401,6 @@ a {
       .header-pic {
         display: none; } }
 
-#header-nav2 {
-  display: none; }
-
 .sticky {
   position: fixed;
   top: 0rem;
@@ -447,46 +441,6 @@ a {
   100% {
     opacity: 1;
     transform: translate(0); } }
-
-@keyframes moveInTopBounce {
-  0% {
-    opacity: 0;
-    transform: translateY(-90vh);
-    animation-timing-function: ease-in; }
-  9% {
-    transform: translateY(0vh);
-    animation-timing-function: ease-out; }
-  18% {
-    transform: translateY(-45vh);
-    animation-timing-function: ease-in; }
-  27% {
-    transform: translateY(0vh);
-    animation-timing-function: ease-out; }
-  36% {
-    transform: translateY(-27vh);
-    animation-timing-function: ease-in; }
-  45% {
-    transform: translateY(0vh);
-    animation-timing-function: ease-out; }
-  54% {
-    transform: translateY(-16vh);
-    animation-timing-function: ease-in; }
-  63% {
-    transform: translateY(0vh);
-    animation-timing-function: ease-out; }
-  72% {
-    transform: translateY(-9vh);
-    animation-timing-function: ease-in; }
-  81% {
-    transform: translateY(0vh);
-    animation-timing-function: ease-out; }
-  90% {
-    transform: translateY(0vh);
-    animation-timing-function: ease-in; }
-  100% {
-    opacity: 1;
-    transform: translateY(0vh);
-    animation-timing-function: ease-out; } }
 
 @keyframes moveInFarLeft {
   0% {
