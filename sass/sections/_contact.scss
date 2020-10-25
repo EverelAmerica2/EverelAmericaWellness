@@ -92,7 +92,7 @@
             text-decoration: underline;
             cursor: pointer;
             transform: translateY(.1rem) scale(.95);
-            box-shadow: none;
+            box-shadow: .1rem .2rem .2rem rgba($color-black,.4);
         }
     }
 }

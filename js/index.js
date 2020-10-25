@@ -1,3 +1,32 @@
+
+/*
+ * phone size nav-bar checkbox 
+ */
+// function navCheckbox() {
+//     console.log("get in navCheckBox function");
+//     let naviToggle = document.getElementById('navi-toggle');
+//     naviToggle.checked = false;
+//     let naviBkg = document.getElementById("navigation__background");
+//     let naviList = document.getElementById("navigation__nav");
+//     naviList.style.width="0";
+//     naviList.style.opacity="0";
+//     naviList.style.zIndex="-100";
+//     naviBkg.style.width= "480rem";
+//     naviBkg.style.height="480rem";
+// }
+
+// function toggleNav(){
+//     console.log("get in toggleNav");
+//     //let naviBkg = document.getElementById("navigation__background");
+//     //let naviList = document.getElementById("navigation__nav");
+
+//     $("#navigation__background").toggleClass("activeBkg");
+//     $("#navigation__nav").toggleClass("activeNav");
+// }
+
+// $("#nevigation__checkbox").on("click", toggleNav);
+//$(".navigation__link").on("click",navCheckbox);
+
 /**
  * render Footer
  */
@@ -85,13 +114,12 @@ printNavigation();
  *sticky feature for nav-bar 
  */
 function navSticky(x) {
-    let navbar1 = document.getElementById('header-nav1');
+    let navbar1 = document.getElementById('header-top');
 
 
     if (x.matches) {
         if (window.pageYOffset >= 100) {
             navbar1.classList.add("sticky");
-            navbar1.style.display = 'inline-block';
         } else {
             navbar1.classList.remove("sticky");
         }
@@ -175,12 +203,3 @@ function currentSlide(n) {
     slideIndex = n;
     showSlides(slideIndex, viewPort2, viewPort3);
 }
-
-/*
- * phone size nav-bar checkbox 
- */
-function navCheckbox() {
-    let naviToggle = document.getElementById('navi-toggle');
-    naviToggle.checked = false;
-}
-
