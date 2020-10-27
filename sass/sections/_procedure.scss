@@ -1,11 +1,10 @@
 .section-procedure{
     width: 100%;
-    background-color: rgba($color-grey-light-1, .9);
+    //background-color: rgba($color-grey-light-1, .9);
    
 }
 .procedure-content{
-    padding: 2rem;
-    padding-top: 8rem;
+    padding: 8rem 2rem;
     width: 70%;
     position: relative;
     margin: auto;
@@ -39,10 +38,6 @@
         left: 0rem;
           
     }
-    // &-box{
-    //     &-1, &-2, &-3{
-    //     }
-    // }
 
     [class^="procedure-content-box-"] {
         display: inline-block;
