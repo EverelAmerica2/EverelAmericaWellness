@@ -41,7 +41,7 @@ const printFooter = function(){
     $('.footer').append(`
     <div class='footer-box1'>
             <div class='footer-center-box'>
-                <p class='footer-title'>Everel America Pool and Wellness Products</p>
+                <p class='footer-title'>Everel America Pool and Wellness Products, LLC.</p>
                 <p class='footer-content'>5095 Bristol Industrial Way</p>
                 <p class='footer-content'>Buford, Georgia, 30518</p>
                 <p class='footer-title'>contact Us</p>
