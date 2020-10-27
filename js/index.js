@@ -41,7 +41,7 @@ const printFooter = function(){
     $('.footer').append(`
     <div class='footer-box1'>
             <div class='footer-center-box'>
-                <p class='footer-title'>Everel America Pool and Wellness Products</p>
+                <p class='footer-title'>Everel America Pool and Wellness Products, LLC.</p>
                 <p class='footer-content'>5095 Bristol Industrial Way</p>
                 <p class='footer-content'>Buford, Georgia, 30518</p>
                 <p class='footer-title'>contact Us</p>
@@ -68,7 +68,7 @@ const printFooter = function(){
         <div class="footer-box3">
             <div class='footer-logo'><img src='${prefix}./img/logo-new.png' alt='everel america logo' /></div>
         </div>
-        <div class='footer-box4'>Everel America Pool and Wellness Products &copy; ${year}<br/>
+        <div class='footer-box4'>Everel America Pool and Wellness Products, LLC. &copy; ${year}-All rights reserved<br/>
             <img height="35px" alt="Visa credit card" src='${prefix}./img/Visa-256.PNG'/>
             <img height="35px" alt="American Express credit card" src='${prefix}./img/American-Express-256.PNG'/>
             <img height="35px" alt="master card credit card" src='${prefix}./img/Master-Card-256.png'/>

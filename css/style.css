@@ -464,24 +464,38 @@ a {
     object-fit: cover; }
 
 .section-brands {
-  width: 100%;
+  width: 70%;
   height: 30vh;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  margin: auto; }
 
 .brand-mover {
   overflow: hidden;
   height: 60%;
+  width: 200%;
   margin: auto;
-  width: 80%;
   display: block;
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  animation: moveSlideshow 16s linear infinite; }
+  @media only screen and (max-width: 56.25em) {
+    .brand-mover {
+      width: 130%; } }
   .brand-mover img {
-    height: 90%;
+    height: 80%;
+    width: 25rem;
     display: inline-block;
-    margin-right: 3rem;
-    overflow: hidden;
-    animation: moveSlideshow 10s linear infinite; }
+    vertical-align: middle;
+    object-fit: contain;
+    margin-right: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .brand-mover img {
+        width: 15rem !important;
+        margin-right: 2rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .brand-mover img {
+        width: 8rem !important;
+        margin-right: 1rem !important; } }
 
 @keyframes moveSlideshow {
   100% {
@@ -499,6 +513,9 @@ a {
   @media only screen and (max-width: 81.25em) {
     .intro-content {
       width: 70% !important; } }
+  @media only screen and (max-width: 81.25em) {
+    .intro-content {
+      width: 90% !important; } }
   .intro-content-title {
     text-transform: uppercase; }
   .intro-content-text {

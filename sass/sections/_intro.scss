@@ -14,6 +14,9 @@
         @include respond(tab-land) {
             width: 70% !important;
         }
+        @include respond(tab-land) {
+            width: 90% !important;
+        }
 
         &-title{
             text-transform: uppercase;
