@@ -724,7 +724,7 @@ a {
       z-index: 1;
       position: absolute;
       height: 3rem;
-      width: 20rem;
+      width: 15rem;
       text-align: center;
       top: 50%;
       left: 50%;
@@ -736,7 +736,7 @@ a {
       top: 50%;
       left: 50%;
       height: 3rem;
-      width: 20rem;
+      width: 15rem;
       z-index: -1;
       text-align: center;
       transform: translate(-50%, -50%);
