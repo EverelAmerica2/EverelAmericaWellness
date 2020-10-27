@@ -9,7 +9,7 @@
         display: block;
         margin: auto;
         text-align: center;;
-        padding: 2rem;
+        padding: 8rem 2rem;
 
         @include respond(tab-land) {
             width: 70% !important;

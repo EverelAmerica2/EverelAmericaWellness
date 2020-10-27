@@ -1,5 +1,6 @@
 .section-services{
     width: 100%;
+    background-color: rgba($color-grey-light-1, .9);
 }
 
 .service{
@@ -21,6 +22,7 @@
         border: 1px solid rgba($color-grey-dark-1, .5);
         box-shadow: 0.1rem 0.1rem 0.1rem rgba($color-grey-dark-1, .4);
         margin-top: calc(#{$gutter-horizontal});
+        background-color: $color-white;
         transition: .4s;
         vertical-align: top;
         position: relative;

@@ -509,7 +509,7 @@ a {
   display: block;
   margin: auto;
   text-align: center;
-  padding: 2rem; }
+  padding: 8rem 2rem; }
   @media only screen and (max-width: 81.25em) {
     .intro-content {
       width: 70% !important; } }
@@ -535,10 +535,11 @@ a {
       transform: translateY(-1em); }
 
 .section-latest {
-  width: 100%; }
+  width: 100%;
+  background-color: rgba(249, 247, 246, 0.9); }
 
 .latest-content {
-  padding: 2rem;
+  padding: 8rem 2rem;
   padding-top: 8rem;
   width: 70%;
   margin: auto; }
@@ -597,7 +598,8 @@ a {
     box-shadow: 0.1rem 0.1rem 0.1rem rgba(83, 83, 83, 0.4);
     transition: .4s;
     margin-top: calc(2rem);
-    position: relative; }
+    position: relative;
+    background-color: #fff; }
     .latest-content [class^="latest-content-box-"]:hover {
       transform: translateY(-1rem);
       box-shadow: 0.8rem 0.8rem 0.8rem rgba(83, 83, 83, 0.4); }
@@ -612,12 +614,10 @@ a {
         width: 100% !important; } }
 
 .section-procedure {
-  width: 100%;
-  background-color: rgba(249, 247, 246, 0.9); }
+  width: 100%; }
 
 .procedure-content {
-  padding: 2rem;
-  padding-top: 8rem;
+  padding: 8rem 2rem;
   width: 70%;
   position: relative;
   margin: auto; }
@@ -657,7 +657,8 @@ a {
         width: 100% !important; } }
 
 .section-services {
-  width: 100%; }
+  width: 100%;
+  background-color: rgba(249, 247, 246, 0.9); }
 
 .service-content {
   width: 70%;
@@ -676,6 +677,7 @@ a {
   border: 1px solid rgba(83, 83, 83, 0.5);
   box-shadow: 0.1rem 0.1rem 0.1rem rgba(83, 83, 83, 0.4);
   margin-top: calc(2rem);
+  background-color: #fff;
   transition: .4s;
   vertical-align: top;
   position: relative; }
@@ -765,12 +767,10 @@ a {
 
 .section-contact {
   width: 100%;
-  padding-bottom: 10rem;
-  color: #535353;
-  background-color: rgba(249, 247, 246, 0.9); }
+  color: #535353; }
 
 .contact-form {
-  padding: 2rem 4rem;
+  padding: 8rem 2rem;
   width: 100%;
   font-size: 2rem; }
   .contact-form-title {
@@ -781,6 +781,9 @@ a {
     @media only screen and (max-width: 81.25em) {
       .contact-form-title {
         width: 70% !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form-title {
+        width: 100% !important; } }
   .contact-form-content {
     width: 50%;
     line-height: 1.5;
@@ -790,7 +793,7 @@ a {
         width: 70% !important; } }
     @media only screen and (max-width: 37.5em) {
       .contact-form-content {
-        width: 100%; } }
+        width: 100% !important; } }
   .contact-form-text {
     width: 50%;
     margin: 0 auto;
@@ -803,7 +806,7 @@ a {
         width: 70% !important; } }
     @media only screen and (max-width: 37.5em) {
       .contact-form-text {
-        width: 90%; } }
+        width: 90% !important; } }
   .contact-form-name, .contact-form-company, .contact-form-email, .contact-form-number {
     font-size: inherit;
     width: 70%;
@@ -818,7 +821,7 @@ a {
     height: 16rem; }
     @media only screen and (max-width: 37.5em) {
       .contact-form-msg {
-        width: 90%; } }
+        width: 90% !important; } }
   .contact-form button {
     display: block;
     margin: auto;

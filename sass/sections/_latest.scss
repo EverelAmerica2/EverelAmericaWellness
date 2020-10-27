@@ -1,10 +1,10 @@
 .section-latest{
     width: 100%;
-
+    background-color: rgba($color-grey-light-1, .9);
 }
 
 .latest-content{
-    padding: 2rem;
+    padding: 8rem 2rem;
     padding-top: 8rem;
     width: 70%;
     margin: auto;
@@ -88,6 +88,7 @@
         transition: .4s;
         margin-top: calc(#{$gutter-horizontal});
         position: relative;
+        background-color: $color-white;
 
         &:hover{
             transform: translateY(-1rem);
