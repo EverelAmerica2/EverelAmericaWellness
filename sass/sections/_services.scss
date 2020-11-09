@@ -112,9 +112,40 @@
             display: inline-block;
             vertical-align: top;
             background-size: cover;
+            background-position: center;
 
             &__1{
                 background-image:url("../img/swimming-2392283_1920.jpg");
+            }
+            &__2{
+                background-image:url("../img/competition.png");
+            }
+            &__3{
+                background-image:url("../img/hospitality.jpg");
+            }
+            &__4{
+                background-image:url("../img/leisure.jpg");
+            }
+            &__5{
+                background-image:url("../img/renovaction.jpg");
+            }
+            &__6{
+                background-image:url("../img/wellness.jpg");
+            }
+            &__7{
+                background-image:url("../img/mytha-technology.jpg");
+            }
+            &__8{
+                background-image:url("../img/swimming-2392283_1920.jpg");
+            }
+            &__9{
+                background-image:url("../img/aqquatix.jpg");
+            }
+            &__10{
+                background-image:url("../img/good-boost.png");
+            }
+            &__11{
+                background-image:url("../img/preformati.jpg");
             }
 
             @include respond(phone){
