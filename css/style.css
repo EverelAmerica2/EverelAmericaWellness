@@ -746,9 +746,30 @@ a {
     width: 40%;
     display: inline-block;
     vertical-align: top;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     .service-box-first__1 {
       background-image: url("../img/swimming-2392283_1920.jpg"); }
+    .service-box-first__2 {
+      background-image: url("../img/competition.png"); }
+    .service-box-first__3 {
+      background-image: url("../img/hospitality.jpg"); }
+    .service-box-first__4 {
+      background-image: url("../img/leisure.jpg"); }
+    .service-box-first__5 {
+      background-image: url("../img/renovaction.jpg"); }
+    .service-box-first__6 {
+      background-image: url("../img/wellness.jpg"); }
+    .service-box-first__7 {
+      background-image: url("../img/mytha-technology.jpg"); }
+    .service-box-first__8 {
+      background-image: url("../img/swimming-2392283_1920.jpg"); }
+    .service-box-first__9 {
+      background-image: url("../img/aqquatix.jpg"); }
+    .service-box-first__10 {
+      background-image: url("../img/good-boost.png"); }
+    .service-box-first__11 {
+      background-image: url("../img/preformati.jpg"); }
     @media only screen and (max-width: 37.5em) {
       .service-box-first {
         width: 100%;
