@@ -27,7 +27,7 @@
     &-content{
         width:50%;
         line-height: 1.5;
-        margin: auto;
+        margin: auto; 
 
         @include respond(tab-land) {
             width: 70% !important;
