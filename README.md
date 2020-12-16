@@ -1,6 +1,6 @@
 # everelamericawellness
 
-## Fodler Structures
+## Folder Structures
 ```
 EverelAmericaWellness
  ┣ css                              //css style folder
